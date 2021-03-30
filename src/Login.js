@@ -42,7 +42,7 @@ function Login() {
           placeholder="Password :"
         />
         <button onClick={login} id="login-button">
-          Login{" "}
+          Login 
         </button>
       </div>
     </div>
