@@ -88,3 +88,43 @@
     margin-top: 2rem;
     margin-left: 6rem;
 }
+/* Quizz App Work */
+#heading-div{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+#card-div{
+    height: 30rem;
+    background-image: url("./Asset/Imag/imag.jpg");
+    background-repeat: no-repeat;
+    background-size: 86rem;
+}
+#button-div{
+    border: solid none;
+    height: 15rem;
+    width: 70%;
+    margin-left: 9rem;
+    /* display: flex;
+    justify-content: space-around; */
+}
+.js-button{
+    margin-top: 3rem;
+    width: 30%;
+    height: 3rem;
+    /* background-color: chocolate; */
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.css-button{
+    width: 30%;
+    height: 3rem;
+    /* background-color: seagreen; */
+    color: white;
+    border: none;
+    margin-left: 20rem;
+    border-radius: 10px;
+    /* margin-bottom: 1rem; */
+}
