@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Image from "./Asset/Imag/imag.jpg";
+// import Image from "./Asset/Imag/imag.jpg";
 
 function Quizz() {
-//   const [data, setData] = useState([]);
-//   const getDta = () => {
-//     fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
-//       .then((res) => res.json())
-//       .then((data) => setData(data));
-//   };
-//   console.log("--->>", data);
+  const [data, setData] = useState("");
+  const getDta = () => {
+    fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+    };
+    console.log("--->>Data", data)
   return (
     <div>
       <div id="heading-div">
@@ -19,13 +19,13 @@ function Quizz() {
 
       <div id="card-div">
         <div id="button-div">
-          <button className="js-button">
+          <button onClick={getDta} className="js-button">
             Html
           </button>
           {/* {data.map((item) => {
             return (
               <p>
-                {item.results.question}
+                {item.results.incorrect_answers}
               </p>
             );
           })} */}

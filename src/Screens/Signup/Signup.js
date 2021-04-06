@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Signup.css";
-import Background from "./Asset/Imag/Green.jpg";
 
-function Signup(props) {
-  console.log("=====>>>>", props);
+function Signup() {
+  let history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const emailValue = (e) => {
@@ -17,11 +17,15 @@ function Signup(props) {
   const singup = () => {
     // console.log(email)
     // console.log(password)
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
-    props.setSignup(false);
-    props.setLogin(true);
+    if (email === "" && password === "") {
+      alert("Enter Values");
+    } else {
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userPassword", password);
+      history.push("/")
+    }
   };
+
   return (
     // Main Div Start
     <div id="main-Div">
@@ -49,11 +53,9 @@ function Signup(props) {
 
       <div id="button-Div">
         <button onClick={singup} id="signup-button">
-          Sign- Up
+          Sign Up
         </button>
-        <a href="#" id="alert">
-          Already have an account?Log in.
-        </a>
+        
       </div>
     </div>
   );

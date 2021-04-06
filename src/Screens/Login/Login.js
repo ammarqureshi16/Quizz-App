@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import Signup from "../Signup/Signup";
 
 function Login() {
+  let history = useHistory();
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPass, setLoginPass] = useState("");
 
@@ -20,10 +23,15 @@ function Login() {
 
     if (loginEmail === getEmail && loginPass === getPassword) {
       alert("Login Successfully");
+      history.push("/quizz");
     } else {
       alert("Incorrcet");
     }
   };
+  const signup = () => {
+    history.push("/signup");
+  };
+
   return (
     <div id="main-Div">
       <div id="signup-Div">
@@ -42,7 +50,10 @@ function Login() {
           placeholder="Password :"
         />
         <button onClick={login} id="login-button">
-          Login 
+          Login
+        </button>
+        <button onClick={signup} id="craete-button">
+          Create New Account
         </button>
       </div>
     </div>
