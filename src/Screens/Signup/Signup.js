@@ -22,7 +22,7 @@ function Signup() {
     } else {
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);
-      history.push("/")
+      history.push("/login")
     }
   };
 

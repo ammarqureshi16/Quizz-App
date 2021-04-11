@@ -16,8 +16,8 @@ function Login() {
     setLoginPass(inp);
   };
   const login = () => {
-    console.log(loginEmail);
-    console.log(loginPass);
+    // console.log(loginEmail);
+    // console.log(loginPass);
     const getEmail = localStorage.getItem("userEmail");
     const getPassword = localStorage.getItem("userPassword");
 
