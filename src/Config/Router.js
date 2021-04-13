@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "../Screens/Login/Login";
 import Signup from "../Screens/Signup/Signup";
 import Quizz from "../Screens/Quizz/Quizz";
-import Test from "../Screens/test/test";
+import Test from "../Screens/Test";
 
 export default function Reactrouter() {
   return (
@@ -15,15 +15,19 @@ export default function Reactrouter() {
           <Route path="/quizz">
             <Quizz />
           </Route>
+
           <Route path="/signup">
             <Signup />
           </Route>
+
           <Route path="/login">
             <Login />
           </Route>
+
           <Route path="/test">
             <Test />
           </Route>
+          
         </Switch>
       </div>
     </Router>

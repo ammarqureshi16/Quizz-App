@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+
 function Quizz() {
   let history = useHistory();
- 
-  const get = () => {
-    history.push("/test");
-  };
   // const [data, setData] = useState([]);
   // const getDta = () => {
   //   fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
   //     .then((res) => res.json())
   //     .then((data) => setData(data));
   //   };
-    // console.log("--->>Data", data) 
+  //   // console.log("--->>Data", data) 
+   const go=()=>{
+     history.push("/test")
+   }
   return (
     <div>
       <div id="heading-div">
@@ -23,7 +23,7 @@ function Quizz() {
 
       <div id="card-div">
         <div id="button-div">
-          <button onClick={get} className="js-button">
+          <button onClick={go} className="js-button">
             Html
           </button>
           {/* {data.map((item) => {
@@ -32,12 +32,14 @@ function Quizz() {
               <div>
                 <h1>
                   {item.results.question}
-                </h1>
-                <input typ="radio" name="gender" value="{}"/>
+                </h1> 
+                <label>{item.results.option}</label>
+                <input typ="radio" name="gender" value={item}/>
+               
                 </div>
             );
           })} */}
-          <button className="css-button">Css</button>
+          <button  className="css-button">Css</button>
           <br />
           <button className="js-button">Javascript</button>
           <button className="css-button">React</button>
