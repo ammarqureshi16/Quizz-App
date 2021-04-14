@@ -24,9 +24,9 @@ export default function Reactrouter() {
             <Login />
           </Route>
 
-          {/* <Route path="/test">
+          <Route path="/test">
             <Test />
-          </Route> */}
+          </Route>
           
         </Switch>
       </div>

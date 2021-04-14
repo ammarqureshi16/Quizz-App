@@ -138,3 +138,13 @@
     height: 10rem;
     text-align: center;
 }
+#start-quiz{
+    background-color: blue;
+    color: white;
+    width: 30%;
+    height: 3rem;
+    border: none;
+    border-radius: 15px;
+    margin-top: 2rem;
+    margin-left: 30rem;
+}

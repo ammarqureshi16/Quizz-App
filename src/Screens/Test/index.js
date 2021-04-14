@@ -1,6 +1,43 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
-// function Test() {
+function Test() {
+  const [data, setData] = useState([]);
+  const get = () => {
+    fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
+      .then((res) => res.json())
+      .then((data) => setData(data.results));
+  };
+  return (
+    <div>
+        <button id="start-quiz" onClick={get}>
+            Start Quizz
+        </button>
+      {data.map((item) => {
+        console.log(item);
+        return (
+          <div>
+            <div>
+              <h4> {item.question} </h4>
+              <input type="radio" value={item} name="option" />
+              <label> {item.correct_answer} </label>
+
+              {item.incorrect_answers.map((ab) => {
+                // console.log("-------->>>>>>"+ab)
+                return (
+                  <div>
+                    <input type="radio" value={item} name="option" />
+                    <label> {ab} </label>
+                    <label>{item.incorrect_answer}</label>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 //   const arrObj = [
 //     {
 //       question1: "1: What does HTML stand for ?",
@@ -22,7 +59,7 @@
 //       option4A: "<ol>",
 //       option4B: "<ul>",
 //       option4C: "<lu>",
-      
+
 //       question5:"5: Which HTML element defines the title of a document ?",
 //       option5A: "<title>",
 //       option5B: "<head>",
@@ -127,4 +164,4 @@
 //     </div>
 //   );
 // }
-// export default Test;
+export default Test;

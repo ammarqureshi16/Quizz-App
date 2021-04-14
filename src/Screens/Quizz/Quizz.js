@@ -1,12 +1,12 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function Quizz() {
-  const [data, setData] = useState([]);
+  let history = useHistory();
 
   const getDta = () => {
-    fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
-      .then((res) => res.json())
-      .then((data) => setData(data.results));
+    history.push("/test")
+    
   };
   return (
     <div>
@@ -30,52 +30,8 @@ function Quizz() {
           <button className="css-button">C++</button>
         </div>
       </div>
-      {/* {data.map( (item) => {
-        console.log(item);
-        return (
-          <div>
-            <div>
-              <h4>{item.question}</h4>
 
-              {item.incorrect_answers.map( (item) => {
-                // console.log("-------->>>>>>"+item)
-                return(
-                  <div>
-                    <input type="radio" value={item} name="gender" />
-                    <label> {item.incorrect_answers} </label>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        );
-      })} */}
 
-{data.map( (item) => {
-        console.log(item);
-        return (
-          <div>
-            <div>
-              <h4> {item.question} </h4>
-                <input type="radio" value={item} name="option" />
-                <label> {item.correct_answer} </label>
-              
-              {item.incorrect_answers.map( (ab) => {
-                // console.log("-------->>>>>>"+ab)
-                return(
-                  <div>
-                    <input type="radio" value={item} name="option" />
-                    <label> {ab} </label>
-                    <label>{item.incorrect_answer}</label>
-                  
-                  </div>
-                )
-              })}
-
-            </div>
-          </div>
-        );
-      })}
     </div>
   );
 }
