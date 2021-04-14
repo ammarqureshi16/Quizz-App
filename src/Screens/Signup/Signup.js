@@ -22,7 +22,7 @@ function Signup() {
     } else {
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);
-      history.push("/login")
+      history.push("/login");
     }
   };
 
@@ -55,7 +55,6 @@ function Signup() {
         <button onClick={singup} id="signup-button">
           Sign Up
         </button>
-        
       </div>
     </div>
   );

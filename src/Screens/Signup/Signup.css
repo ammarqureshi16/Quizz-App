@@ -1,150 +1,150 @@
-#main-Div{
-    border: solid none;
-    display: flex;
-    justify-content: center;
-    background-image: url('../../Asset/Imag/Green.jpg');
-    background-repeat: no-repeat;
-    background-size: 86rem;
-    height: 39rem;
+#main-Div {
+  border: solid none;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../Asset/Imag/Green.jpg");
+  background-repeat: no-repeat;
+  background-size: 86rem;
+  height: 39rem;
 }
-#signup-Div{
-    border: solid white;
-    background-color: white;
-    height: 25rem;
-    width: 30%;
-    margin-top: 3rem;
-    border-radius: 10px;
+#signup-Div {
+  border: solid white;
+  background-color: white;
+  height: 25rem;
+  width: 30%;
+  margin-top: 3rem;
+  border-radius: 10px;
 }
-#heading{
-    margin-left: 2rem;
-    font-family: 'Times New Roman', Times, serif;
+#heading {
+  margin-left: 2rem;
+  font-family: "Times New Roman", Times, serif;
 }
-#full-name-input{
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+#full-name-input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-#email-input{ 
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+#email-input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-#password-input{
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+#password-input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-#confirm-password{
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+#confirm-password {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-#button-Div{
-    background-color: white;
-    border: solid white;
-    height: 25rem;
-    width: 25%;
-    margin-top: 3rem;
-    border-radius: 10px;
+#button-Div {
+  background-color: white;
+  border: solid white;
+  height: 25rem;
+  width: 25%;
+  margin-top: 3rem;
+  border-radius: 10px;
 }
-#signup-button{
-    background-color: blue;
-    color: white;
-    width: 52%;
-    height: 3rem;
-    border: none;
-    border-radius: 15px;
-    margin-top: 10rem;
-    margin-left: 6rem;
+#signup-button {
+  background-color: blue;
+  color: white;
+  width: 52%;
+  height: 3rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10rem;
+  margin-left: 6rem;
 }
-#alert{
-    color: black;
-    text-decoration: none;
-    margin-left: 6rem;
+#alert {
+  color: black;
+  text-decoration: none;
+  margin-left: 6rem;
 }
-#login-button{
-    background-color: blue;
-    color: white;
-    width: 52%;
-    height: 3rem;
-    border: none;
-    border-radius: 15px;
-    margin-top: 2rem;
-    margin-left: 6rem;
+#login-button {
+  background-color: blue;
+  color: white;
+  width: 52%;
+  height: 3rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-left: 6rem;
 }
-#craete-button{
-    background-color: greenyellow;
-    color: white;
-    width: 52%;
-    height: 3rem;
-    border: none;
-    border-radius: 15px;
-    margin-top: 1rem;
-    margin-left: 6rem;
+#craete-button {
+  background-color: greenyellow;
+  color: white;
+  width: 52%;
+  height: 3rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 1rem;
+  margin-left: 6rem;
 }
 /* Quizz App Work */
-#heading-div{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: black;
-    color: white;
+#heading-div {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  color: white;
 }
-#card-div{
-    height: 30rem;
-    background-image: url("../../Asset/Imag/imag.jpg");
-    background-repeat: no-repeat;
-    background-size: 86rem;
+#card-div {
+  height: 30rem;
+  background-image: url("../../Asset/Imag/imag.jpg");
+  background-repeat: no-repeat;
+  background-size: 86rem;
 }
-#button-div{
-    border: none;
-    height: 15rem;
-    width: 70%;
-    margin-left: 9rem;
+#button-div {
+  border: none;
+  height: 15rem;
+  width: 70%;
+  margin-left: 9rem;
 }
-.js-button{
-    margin-top: 3rem;
-    width: 30%;
-    height: 3rem;
-    color: black;
-    border: none;
-    border-radius: 10px;
+.js-button {
+  margin-top: 3rem;
+  width: 30%;
+  height: 3rem;
+  color: black;
+  border: none;
+  border-radius: 10px;
 }
-.css-button{
-    width: 30%;
-    height: 3rem;
-    color: black;
-    border: none;
-    margin-left: 20rem;
-    border-radius: 10px;
+.css-button {
+  width: 30%;
+  height: 3rem;
+  color: black;
+  border: none;
+  margin-left: 20rem;
+  border-radius: 10px;
 }
-#question-div{
-    border: solid red;
-    height: 10rem;
-    text-align: center;
+#question-div {
+  border: solid red;
+  height: 10rem;
+  text-align: center;
 }
-#start-quiz{
-    background-color: blue;
-    color: white;
-    width: 30%;
-    height: 3rem;
-    border: none;
-    border-radius: 15px;
-    margin-top: 2rem;
-    margin-left: 30rem;
+#start-quiz {
+  background-color: blue;
+  color: white;
+  width: 30%;
+  height: 3rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-left: 30rem;
 }

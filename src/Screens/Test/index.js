@@ -9,9 +9,9 @@ function Test() {
   };
   return (
     <div>
-        <button id="start-quiz" onClick={get}>
-            Start Quizz
-        </button>
+      <button id="start-quiz" onClick={get}>
+        Start Quizz
+      </button>
       {data.map((item) => {
         console.log(item);
         return (

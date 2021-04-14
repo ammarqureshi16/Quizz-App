@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-
 function Quizz() {
   let history = useHistory();
-
   const getDta = () => {
-    history.push("/test")
-    
+    history.push("/test");
   };
   return (
     <div>
@@ -15,7 +12,6 @@ function Quizz() {
       </div>
       {/* <div style={{width:"20%",border:"1px solid red",justifyContent:"center"}}>
             </div> */}
-
       <div id="card-div">
         <div id="button-div">
           <button onClick={getDta} className="js-button">
@@ -30,8 +26,6 @@ function Quizz() {
           <button className="css-button">C++</button>
         </div>
       </div>
-
-
     </div>
   );
 }

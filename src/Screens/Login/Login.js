@@ -24,8 +24,7 @@ function Login() {
     if (loginEmail === getEmail && loginPass === getPassword) {
       alert("Login Successfully");
       history.push("/quizz");
-    }
-     else {
+    } else {
       alert("Incorrcet");
     }
   };
