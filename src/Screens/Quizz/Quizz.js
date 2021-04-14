@@ -1,18 +1,13 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 
 function Quizz() {
-  let history = useHistory();
-  // const [data, setData] = useState([]);
-  // const getDta = () => {
-  //   fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data));
-  //   };
-  //   // console.log("--->>Data", data) 
-   const go=()=>{
-     history.push("/test")
-   }
+  const [data, setData] = useState([]);
+
+  const getDta = () => {
+    fetch("https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple")
+      .then((res) => res.json())
+      .then((data) => setData(data.results));
+  };
   return (
     <div>
       <div id="heading-div">
@@ -23,23 +18,10 @@ function Quizz() {
 
       <div id="card-div">
         <div id="button-div">
-          <button onClick={go} className="js-button">
+          <button onClick={getDta} className="js-button">
             Html
           </button>
-          {/* {data.map((item) => {
-          console.log(item.results.question)
-            return (
-              <div>
-                <h1>
-                  {item.results.question}
-                </h1> 
-                <label>{item.results.option}</label>
-                <input typ="radio" name="gender" value={item}/>
-               
-                </div>
-            );
-          })} */}
-          <button  className="css-button">Css</button>
+          <button className="css-button">Css</button>
           <br />
           <button className="js-button">Javascript</button>
           <button className="css-button">React</button>
@@ -47,7 +29,27 @@ function Quizz() {
           <button className="js-button">React Native</button>
           <button className="css-button">C++</button>
         </div>
-      </div>  
+      </div>
+      {data.map( (item) => {
+        console.log(item);
+        return (
+          <div>
+            <div>
+              <h4>{item.question}</h4>
+
+              {item.incorrect_answers.map( (item) => {
+                // console.log("-------->>>>>>"+item)
+                return(
+                  <div>
+                    <input type="radio" value={item} name="gender" />
+                    <label> {item.incorrect_answers} </label>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
