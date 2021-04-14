@@ -30,7 +30,7 @@ function Quizz() {
           <button className="css-button">C++</button>
         </div>
       </div>
-      {data.map( (item) => {
+      {/* {data.map( (item) => {
         console.log(item);
         return (
           <div>
@@ -46,6 +46,32 @@ function Quizz() {
                   </div>
                 )
               })}
+            </div>
+          </div>
+        );
+      })} */}
+
+{data.map( (item) => {
+        console.log(item);
+        return (
+          <div>
+            <div>
+              <h4> {item.question} </h4>
+                <input type="radio" value={item} name="option" />
+                <label> {item.correct_answer} </label>
+              
+              {item.incorrect_answers.map( (ab) => {
+                // console.log("-------->>>>>>"+ab)
+                return(
+                  <div>
+                    <input type="radio" value={item} name="option" />
+                    <label> {ab} </label>
+                    <label>{item.incorrect_answer}</label>
+                  
+                  </div>
+                )
+              })}
+
             </div>
           </div>
         );
