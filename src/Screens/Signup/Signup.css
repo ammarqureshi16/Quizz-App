@@ -106,18 +106,20 @@
   color: white;
 }
 #card-div {
+  border: solid blue;
   height: 30rem;
   background-image: url("../../Asset/Imag/imag.jpg");
   background-repeat: no-repeat;
   background-size: 86rem;
 }
-#button-div {
+/* #button-div {
+  border: solid red;
   border: none;
   height: 15rem;
   width: 70%;
   margin-left: 9rem;
-}
-.js-button {
+} */
+/* .js-button {
   margin-top: 3rem;
   width: 30%;
   height: 3rem;
@@ -132,7 +134,7 @@
   border: none;
   margin-left: 20rem;
   border-radius: 10px;
-}
+} */
 #question-div {
   border: solid red;
   height: 10rem;

@@ -15,6 +15,7 @@ function Login() {
     const inp = e.target.value;
     setLoginPass(inp);
   };
+
   const login = () => {
     // console.log(loginEmail);
     // console.log(loginPass);

@@ -6,14 +6,17 @@ function Signup() {
   let history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const emailValue = (e) => {
     const inp = e.target.value;
     setEmail(inp);
   };
+
   const passwordValue = (e) => {
     const inp = e.target.value;
     setPassword(inp);
   };
+
   const singup = () => {
     // console.log(email)
     // console.log(password)
@@ -22,7 +25,7 @@ function Signup() {
     } else {
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);
-      history.push("/login");
+      history.push("/");
     }
   };
 
@@ -30,7 +33,7 @@ function Signup() {
     // Main Div Start
     <div id="main-Div">
       <div id="signup-Div">
-        <h1 id="heading">Sign-Up</h1>
+        <h1 id="heading"> Sign-Up </h1>
         <input id="full-name-input" type="text" placeholder="Full Name :" />
         <input
           onChange={emailValue}

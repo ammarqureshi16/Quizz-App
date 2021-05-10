@@ -25,7 +25,7 @@ function Test() {
                 // console.log("-------->>>>>>"+ab)
                 return (
                   <div>
-                    <input type="radio" value={item} name="option" />
+                    <input type="radio" value={item} name="option1" />
                     <label> {ab} </label>
                     <label>{item.incorrect_answer}</label>
                   </div>
