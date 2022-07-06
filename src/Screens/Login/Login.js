@@ -36,27 +36,27 @@ function Login() {
   return (
     <div id="main-Div">
       <div id="signup-Div">
-        <h1 id="heading">Login</h1>
-        <input id="full-name-input" type="text" placeholder="Full Name :" />
+        <h1 id="heading"> Login </h1>{" "}
+        <input id="login-inputs" type="text" placeholder="Full Name :" />
         <input
           onChange={email}
-          id="email-input"
+          id="login-inputs"
           type="email"
           placeholder="Email :"
         />
         <input
           onChange={pass}
-          id="password-input"
+          id="login-inputs"
           type="password"
           placeholder="Password :"
         />
         <button onClick={login} id="login-button">
-          Login
-        </button>
+          Login{" "}
+        </button>{" "}
         <button onClick={signup} id="craete-button">
-          Create New Account
-        </button>
-      </div>
+          Create New Account{" "}
+        </button>{" "}
+      </div>{" "}
     </div>
   );
 }
